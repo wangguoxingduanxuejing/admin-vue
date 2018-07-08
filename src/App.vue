@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
+  <div id="app" class="login-wrap">
+    
     <router-view/>
   </div>
 </template>
@@ -12,12 +12,20 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  #app {
+    height: 100%;
+  }
+  .login-wrap {
+  background-color: #324152;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrap .login-from {
+  background-color: #fff;
+  width: 400px;
+  padding: 30px;
+  border-radius: 5px;
 }
 </style>
